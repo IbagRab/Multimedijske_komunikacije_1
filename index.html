@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vježba7</title>
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+
+<h1>Moja stranica</h1>
+<p>Dobrodošli na moju stranicu!<br>Na ovoj stranici imate priliku vidjeti par mojih fotografija te saznati nešto o meni.<br>Uživajte i nadam se kako će Vam se svidjeti. <span>&#128512;</span> </p>
+
+<h2>Moja galerija</h2>
+<div class="slike">
+    <img src="slike/slika1.jpg">
+    <img src="slike/slika2.jpg">
+    <img src="slike/slika3.jpg">
+	<img src="slike/slika4.jpeg">
+	<img src="slike/slika5.jpg">
+    <img src="slike/slika6.jpg">
+    <img src="slike/slika7.jpg">
+	<img src="slike/slika8.jpg">
+	<img src="slike/slika9.jpg"> 
+	<img src="slike/slika10.jpg">	
+</div>
+
+<h2>Moja top 3 filma</h2>
+<ol>
+   <li><a href="slike/film1.jpg" target="f1">Hacksaw Ridge</a></li>
+   <li><a href="slike/film2.jpg" target="f2">The Hate U Give</a></li>
+   <li><a href="slike/film3.jpg" target="f3">Miracle in Cell No. 7 (2019)</a></li>
+</ol>
+<div class="kontejner">
+   <iframe name="f1" id="f1"></iframe>
+   <iframe name="f2" id="f2"></iframe>
+   <iframe name="f3" id="f3"></iframe>
+</div>
+
+<h2>Mjesta koje želim posjetiti</h2>
+<button class="button" style="vertical-align:middle"><span>Klikni </span></button>
+<map name="1.mjesto">
+    <area shape="rect" coords="0,0,250,182" href="slike/mjesto1.jpg" alt="Prvo mjesto">
+</map>
+<img src="slike/Norveška.jpg" usemap="#1.mjesto">
+<map name="2.mjesto">
+    <area shape="rect" coords="0,0,200,160" href="slike/mjesto2.jpg" alt="Drugo mjesto">
+</map>
+<img src="slike/Monako.jpg" usemap="#2.mjesto">
+<map name="3.mjesto">
+    <area shape="rect" coords="0,0,200,133" href="slike/mjesto3.jpg" alt="Treće mjesto">
+</map>
+<img src="slike/Singapur.png" usemap="#3.mjesto">
+
+<h3>Od ova tri izbora koji bi Vi odabrali?</h3>
+<form>
+  <select id="country" name="country">
+  <option value="no">Norveška</option>
+  <option value="mo">Monako</option>
+  <option value="si">Singapur</option>
+  </select>
+</form>
+
+<h2>Najdraža pjesma</h2>
+<div class="pjesma">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jwmbkhWqmTQ?si=K-gMe7O7Tu0H3kV8&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<h2>Najdraža strana pjesma</h2>
+<h3>Imagine Dragons - Zero (From the Original Motion Picture "Ralph Breaks The Internet")</h3>
+<audio controls autoplay muted loop>
+	<source src="slike/pjesma.mp3" type="audio/mp3"/>
+</audio>
+
+<h2>Jedan od dražih videa</h2>
+<video width="560" height="315" controls muted>
+	<source src="slike/video.mp4" type="video/mp4"/>
+</video>
+
+<h3>Nadam se kako Vam se svidjela moja stranica</h3>
+<div class="kontejner1">
+<button onclick="alert('Hvala! :)')">Sviđa mi se<span>&#128512;</span></button>
+<button onclick="alert('Drago mi je! :)')">Sviđa mi se<span>&#128512;</span><span>&#128512;</span></button>
+</div>
+
+</body>
+</html>
+
